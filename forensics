@@ -1,7 +1,17 @@
 ##Commands
+
 xxd
   -turns binary file content into readable content
-e.g xxd flag.bin
+  -e.g xxd flag.bin
 
 zsteg
   -finds hidden content in image files (Steganography)
+  -e.g zsteg flag.png
+
+binwalk
+  -displays and extracts files from any binary file
+  -e.g binwalk -e flag.png
+
+fcrackzip
+  -cracks zip files using the list of passwords in a file you provided
+  -e.g fcrackzip -u -D -p passwords.txt file.zip
