@@ -1,0 +1,10 @@
+##Commands:
+
+set disassembly-flavor intel
+  -used to make assembly code easier to read
+
+disas main
+  -prints everything in main function
+
+
+
