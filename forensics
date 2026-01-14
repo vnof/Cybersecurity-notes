@@ -1,0 +1,6 @@
+xxd:
+-turns binary file content into readable content
+e.g xxd flag.bin
+
+
+
