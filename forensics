@@ -1,6 +1,7 @@
-xxd:
--turns binary file content into readable content
+##Commands
+xxd
+  -turns binary file content into readable content
 e.g xxd flag.bin
 
-
-
+zsteg
+  -finds hidden content in image files (Steganography)
