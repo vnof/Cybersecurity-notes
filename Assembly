@@ -1,3 +1,11 @@
+##System V AMD64 calling convention
+  -1 first argument → rdi
+  -2 second argument → rsi
+  -3 third argument → rdx
+  -4 fourth argument → rcx
+  -5 fifth argument → r8
+  -6 sixth argument → r9
+
 ##GDB debugger Commands:
 
 set disassembly-flavor intel
@@ -10,6 +18,7 @@ break
   -pauses at the indacted point
   -e.g break *main+517
 
-
+examine
+  -examines the 
 
 
