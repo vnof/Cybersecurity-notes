@@ -1,10 +1,15 @@
-##Commands:
+##GDB debugger Commands:
 
 set disassembly-flavor intel
   -used to make assembly code easier to read
 
 disas main
   -prints everything in main function
+
+break
+  -pauses at the indacted point
+  -e.g break *main+517
+
 
 
 
