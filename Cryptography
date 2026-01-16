@@ -1,0 +1,12 @@
+##Commands to brute force
+
+John
+  -used to brute force passwords
+    -common brute force hash types
+      -Raw-MD5      (32 characters)
+      -Raw-SHA1     (40 characters)
+      -Raw-SHA256   (64 characters)
+  -e.g ./john --format=Raw-MD5 ~/hash.txt  ##(replace ~/hash.txt with new file, and Raw-MD5 with correct file type)
+
+
+
