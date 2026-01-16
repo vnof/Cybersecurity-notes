@@ -15,3 +15,7 @@ binwalk
 fcrackzip
   -cracks zip files using the list of passwords in a file you provided
   -e.g fcrackzip -u -D -p passwords.txt file.zip
+
+exiftool
+  -Shows image metadata
+  -e.g exiftool flag.png
