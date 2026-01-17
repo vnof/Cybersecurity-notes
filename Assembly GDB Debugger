@@ -23,9 +23,10 @@ examine
   -e.g we want to read whats on rax (mov rax, rbp-0x18) --> x/1gx $rbp-0x18
 
 ##GDB scripts:
-  -create a list of commands that will execute, useful for automation or dealing with tedious tasks
-  -create file named file.gdb, run --> <assembly program> -e file.gdb
-  -then in gdb type --> source file.gdb
+  -create a list of commands that will execute, useful for automation or dealing with tedious tasks    
+    ##steps
+    -create file named file.gdb, run --> <assembly program> -e file.gdb
+    -then in gdb type --> source file.gdb
 
 
 
