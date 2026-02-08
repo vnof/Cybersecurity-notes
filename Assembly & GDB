@@ -6,6 +6,48 @@
   -5 fifth argument → r8
   -6 sixth argument → r9
 
+##64 bit syscall numbers (since we use syscall)
+ 
+--socket syscall ##Must be called first
+  
+  rax = 41
+  rdi = 2 AF_INET
+  rsi = 1 SOCK_STREAM
+  rdx = 0 IPPROTO_IP
+  
+  After syscall
+  socket fd is in rax
+  save it
+
+--bind syscall ##Socket must exist
+  
+  rax = 49
+  rdi = socket fd
+  rsi = pointer to sockaddr_in
+  rdx = 16
+  
+  sockaddr_in must be in .section .data
+  .section .data
+  addr:
+      .word 2        # AF_INET
+      .word 0x5000   # port 80 network byte order
+      .long 0        # 0.0.0.0
+      .quad 0        # padding
+  lea rsi, [rip+addr]
+
+  
+--listen syscall
+  
+  Socket must be created and bound
+  
+  rax = 50
+  rdi = socket fd
+  rsi = backlog
+  
+
+
+
+
 ##GDB debugger Commands:
 
 set disassembly-flavor intel
